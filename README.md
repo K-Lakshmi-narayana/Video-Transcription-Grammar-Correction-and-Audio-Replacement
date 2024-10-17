@@ -40,7 +40,7 @@ Clone the repository:
 git clone https://github.com/your-username/video-audio-replacement.git
 cd video-audio-replacement
 ```
-#Set up API keys:
+## Set up API keys:
 
 To use the Azure Chat API for grammar correction, you will need to set up your API keys in the project.
 Create a .env file in the root directory with your API keys:
@@ -49,7 +49,7 @@ Create a .env file in the root directory with your API keys:
 AZURE_API_KEY=your_azure_api_key
 AZURE_ENDPOINT=your_azure_endpoint
 ```
-###Usage
+### Usage
 Place your video file in the input/ directory (or modify the path in the script accordingly).
 
 Run the script to process the video file:
@@ -66,7 +66,7 @@ This will:
 
 The final video with the corrected audio will be saved in the output/ directory.
 
-###Example Workflow
+### Example Workflow
 
 - Extract audio from the input video.
 - Transcribe audio using Azure Chat API.
@@ -74,22 +74,22 @@ The final video with the corrected audio will be saved in the output/ directory.
 - Convert the corrected text into audio using gTTS.
 - Replace the original audio with the new, grammatically correct audio in the video file.
 
-##Configuration
+## Configuration
 You can configure the following options in the config.json file:
 
 - **silence_timing:** Adjust how long the silences between sentences should last, based on original timestamps.
 - **voice_language:** Specify the language for text-to-speech conversion (default is en for English).
 
-##Known Issues
+## Known Issues
 
 - **Audio Syncing:** In some cases, slight misalignment may occur if the original transcription has significant timing issues. This can be adjusted by modifying the silence duration in the script.
 
-##Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue if you find a bug or have suggestions for new features.
 
-##License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-##Contact
+## Contact
 For any questions or feedback, feel free to reach out to me at klaxminarayana2004@gmail.com
