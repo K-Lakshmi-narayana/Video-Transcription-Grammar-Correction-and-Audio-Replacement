@@ -29,6 +29,7 @@ Install the necessary Python libraries by running:
 
 ```bash
 pip install -r requirements.txt
+```
 
 
 ## Installation
@@ -38,7 +39,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/video-audio-replacement.git
 cd video-audio-replacement
-
+```
 #Set up API keys:
 
 To use the Azure Chat API for grammar correction, you will need to set up your API keys in the project.
@@ -47,7 +48,7 @@ Create a .env file in the root directory with your API keys:
 ```bash
 AZURE_API_KEY=your_azure_api_key
 AZURE_ENDPOINT=your_azure_endpoint
-
+```
 ###Usage
 Place your video file in the input/ directory (or modify the path in the script accordingly).
 
@@ -55,7 +56,7 @@ Run the script to process the video file:
 
 ```bash
 python process_video.py --input input/video.mp4 --output output/final_video.mp4
-
+```
 This will:
 
 - Extract the audio from the video.
